@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Go Shuttle Service</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="reservation" content="Book Your Trip" />
+<meta name="keywords"
+	content="reservation, book a trip, booking, tickets, trip" />
+<meta name="author" content="UNO" />
+<!-- Facebook and Twitter integration -->
+<meta property="og:title" content="" />
+<meta property="og:image" content="" />
+<meta property="og:url" content="" />
+<meta property="og:site_name" content="" />
+<meta property="og:reservation" content="" />
+<meta name="twitter:title" content="" />
+<meta name="twitter:image" content="" />
+<meta name="twitter:url" content="" />
+<meta name="twitter:card" content="" />
+
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+	rel="stylesheet">
+
+<!-- Animate.css -->
+<link rel="stylesheet" href="css/animate.css">
+<!-- Icomoon Icon Fonts-->
+<link rel="stylesheet" href="css/icomoon.css">
+<!-- Themify Icons-->
+<link rel="stylesheet" href="css/themify-icons.css">
+<!-- Bootstrap  -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<!-- Magnific Popup -->
+<link rel="stylesheet" href="css/magnific-popup.css">
+<!-- Magnific Popup -->
+<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+<!-- Owl Carousel  -->
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<!-- Theme style  -->
+<link rel="stylesheet" href="css/style.css">
+<!-- Modernizr JS -->
+<script src="js/modernizr-2.6.2.min.js"></script>
+<!-- FOR IE9 below -->
+<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div class="gtco-loader"></div>
+	<div id="page">
+		<!-- <div class="page-inner"> -->
+		<nav class="gtco-nav" role="navigation">
+			<div class="gtco-container">
+				<div class="row">
+					<div class="col-sm-4 col-xs-12">
+						<div id="gtco-logo">
+							<a href="index.html">Go Shuttle Service <em>.</em></a>
+						</div>
+					</div>
+					<div class="col-xs-8 text-right menu-1">
+						<ul>
+							<li class="active"><a href="index">Home</a></li>
+							<li><a href="reservations">Reservation</a></li>
+							<li><a href="about-us.html">About Us</a></li>
+							<li><a href="pricing">Pricing</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<header id="gtco-header" class="gtco-cover gtco-cover-md"
+			role="banner" style="background-image: url(images/img_bg_2.jpg)">
+			<div class="overlay"></div>
+			<div class="gtco-container">
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-left">
+						<div class="row row-mt-15em" id="bgimg">
+							<div class="col-md-7 mt-text animate-box"
+								data-animate-effect="fadeInUp">
+								<h1 style="color: black;">
+									<b>Planing a Trip Between Lincoln and Omaha?</b>
+								</h1>
+							</div>
+							<div class="col-md-4 col-md-push-1 animate-box"
+								data-animate-effect="fadeInRight">
+								<div class="form-wrap">
+									<div class="tab">
+
+										<div class="tab-content">
+											<div class="tab-content-inner active" data-content="signup">
+												<h3>Check our Schedule</h3>
+												<form method="post">
+													<div class="row form-group">
+														<div class="col-md-12">
+															<label for="origin-city">Pickup City</label> 
+															<select name="origincity" id="origin-city" class="form-control" onchange="getStopsForOrigin(this)" required>
+																<option value="" disabled selected>Select Pickup City</option>
+																<option value="Omaha">Omaha</option>
+																<option value="Lincoln">Lincoln</option>
+															</select>
+														</div>
+														<div class="col-md-12">
+															<label for="origin-stop">Pickup Stop</label> 
+															<select name="origin-stop" id="origin-stop" class="form-control">
+																<option value="" disabled selected>Select Pickup Stop</option>
+															</select>
+														</div>
+														<div class="col-md-12">
+															<label for="destination-city">Arrival City</label> 
+															<select name="destination-city" id="destination-city" class="form-control" onchange="getStopsForDestination(this)" required>
+																<option value="" disabled selected>Select Arrival City</option>
+																<option value="Omaha">Omaha</option>
+																<option value="Lincoln">Lincoln</option>
+															</select>
+														</div>
+														<div class="col-md-12">
+															<label for="destination-stop">Arrival Stop</label> 
+															<select name="destination-stop" id="destination-stop" class="form-control" required>
+																<option value="" disabled selected>Select Arrival Stop</option>
+															</select>
+														</div>
+													</div>
+													
+														
+													
+
+													<div class="row form-group">
+														<div class="col-md-12">
+															<label for="date-start">Travel Date</label> <input
+																type="text" id="date-start" class="form-control"
+																required>
+															<!-- <input type="text" id="date-start" class="form-control"> -->
+														</div>
+													</div>
+													<div class="row form-group">
+														<div class="col-md-12">
+															<input type="submit" class="btn btn-primary btn-block"
+																value="Submit">
+															<!-- <button type="button" onclick="searchAndShowResults(this)">Submit</button> -->
+														</div>
+													</div>
+												</form>
+<!-- 												<div class="row form-group">
+													<div class="col-md-12">
+														<input type="submit" class="btn btn-primary btn-block"
+															onclick="searchAndShowResults(this)" value="Submit">
+													</div>
+												</div> -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>

@@ -1,0 +1,21 @@
+.pricing-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+}
+
+.price-display {
+    width: 250px;
+    background: #fff;
+    border: 2px solid #ECEEF0;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 40px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+
+ 
